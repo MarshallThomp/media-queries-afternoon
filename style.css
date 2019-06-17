@@ -1,0 +1,141 @@
+html, body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.bg-image{
+    background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    width: 100vw;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label {
+    display: none;
+    border: 1px #FED136 solid;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    background: #FED136;
+    color: white;
+    padding: 13px;
+    margin-right: 100px;
+}
+
+.name {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 28px;
+    color: #FECF2C;
+    margin-left: 75px;
+    font-weight: 400;
+}
+
+.menu {
+    margin-right: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#toggle {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        background: #212529;
+    }
+
+    .label {
+        display: block;
+        margin: 0 25px;
+    }
+
+    .name {
+        margin: 0 25px;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        flex-direction: column;
+        background: #212529;
+        width: 100%;
+    }
+
+    .menu a {
+        margin: 10px 0 20px 20px;
+    }
+
+    #toggle:checked + .menu {
+        display: flex;
+    }
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 15%
+}
+
+.welcome-studio {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.meet-you {
+    margin: 20px;
+    font-size: 75px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    flex-wrap: wrap;
+}
+
+.tell-button {
+    padding: 20px;
+    width: 250px;
+    background: #FED136;
+    border: #FED136 solid 1px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .welcome-studio {
+        font-size: 22px;
+    }
+
+    .meet-you {
+        font-size: 40px;
+    }
+}
